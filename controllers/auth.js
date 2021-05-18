@@ -135,7 +135,7 @@ function loginView(req, res) {
   const viewtemplate = {
     // themename,
     viewname: 'auth/login',
-    extname: 'periodicjs.ext.passport',
+    extname: '@digifi/periodicjs.ext.passport',
     // fileext,
   };
   const flashMsg = (req.query.msg) ? req.query.msg.toString() : false;
@@ -159,7 +159,7 @@ function resetView(req, res) {
   const viewtemplate = {
     // themename,
     viewname: 'user/reset',
-    extname: 'periodicjs.ext.passport',
+    extname: '@digifi/periodicjs.ext.passport',
     // fileext,
   };
   const flashMsg = (req.query.msg) ? req.query.msg.toString() : false;
@@ -183,7 +183,7 @@ function completeView(req, res) {
   const viewtemplate = {
     // themename,
     viewname: 'auth/complete',
-    extname: 'periodicjs.ext.passport',
+    extname: '@digifi/periodicjs.ext.passport',
     // fileext,
   };
   const flashMsg = (req.query.msg) ? req.query.msg.toString() : false;
@@ -210,7 +210,7 @@ function forgotView(req, res) {
   const viewtemplate = {
     // themename,
     viewname: 'auth/forgot',
-    extname: 'periodicjs.ext.passport',
+    extname: '@digifi/periodicjs.ext.passport',
     // fileext,
   };
   const viewdata = {

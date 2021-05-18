@@ -1,7 +1,7 @@
 'use strict';
 const periodic = require('periodicjs');
 // const moment = require('moment');
-const passportSettings = periodic.settings.extensions['periodicjs.ext.passport'];
+const passportSettings = periodic.settings.extensions['@digifi/periodicjs.ext.passport'];
 
 /**
  * returns the core data model for either account login or user login

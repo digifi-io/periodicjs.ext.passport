@@ -25,10 +25,10 @@ module.exports = {
       },
     },
     emails: {
-      welcome: 'node_modules/periodicjs.ext.passport/views/email/welcome.ejs',
-      forgot: 'node_modules/periodicjs.ext.passport/views/email/forgot.ejs',
-      reset_notification: 'node_modules/periodicjs.ext.passport/views/email/reset_notification.ejs',
-      account_update: 'node_modules/periodicjs.ext.passport/views/email/account_update.ejs',
+      welcome: 'node_modules/@digifi/periodicjs.ext.passport/views/email/welcome.ejs',
+      forgot: 'node_modules/@digifi/periodicjs.ext.passport/views/email/forgot.ejs',
+      reset_notification: 'node_modules/@digifi/periodicjs.ext.passport/views/email/reset_notification.ejs',
+      account_update: 'node_modules/@digifi/periodicjs.ext.passport/views/email/account_update.ejs',
     },
     email_subjects: {
       welcome: false,

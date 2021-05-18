@@ -1,6 +1,6 @@
 Adding Oauth Client for OAuth2Client
 
-add client token and secret to passport configuration under $p.settings.extensions['periodicjs.ext.passport'].oauth.oauth2client
+add client token and secret to passport configuration under $p.settings.extensions['@digifi/periodicjs.ext.passport'].oauth.oauth2client
 
 example:
 ```javascript
@@ -11,7 +11,7 @@ example:
    },
   emails:
    { welcome:
-      'node_modules/periodicjs.ext.passport/views/email/welcome.ejs', },
+      'node_modules/@digifi/periodicjs.ext.passport/views/email/welcome.ejs', },
   email_subjects: { welcome: false, forgot: false },
   oauth:
    { 
@@ -41,7 +41,7 @@ example:
 ```
 
 How this impacts oauth2client
-$p.locals.extensions.get('periodicjs.ext.oauth2client').oauth
+$p.locals.extensions.get('@digifi/periodicjs.ext.oauth2client').oauth
 ```javascript
 { selectedUserAuthToken: { square: null }, // can create auth headers with user selected
   clientAuthToken: { square: [Function] }, //hold header for clients in passport configuration

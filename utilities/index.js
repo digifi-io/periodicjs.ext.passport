@@ -9,7 +9,7 @@ const periodicRoutingUtil = periodic.utilities.routing;
 function getSettings() {
   // console.log('periodic.extensions', periodic.extensions);
   // console.log('periodic.settings', periodic.settings);
-  return periodic.settings.extensions[ 'periodicjs.ext.passport' ];
+  return periodic.settings.extensions[ '@digifi/periodicjs.ext.passport' ];
 }
 
 

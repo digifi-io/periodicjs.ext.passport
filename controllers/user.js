@@ -18,7 +18,7 @@ function registerView(req, res) {
   const viewtemplate = {
     // themename,
     viewname: 'user/register',
-    extname: 'periodicjs.ext.passport',
+    extname: '@digifi/periodicjs.ext.passport',
     // fileext,
   };
   const viewdata = {
