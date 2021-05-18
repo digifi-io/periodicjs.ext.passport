@@ -5,11 +5,11 @@ const entityLink = require('../components/entityLink');
 
 module.exports = (periodic) => {
   let reactapp = periodic.locals.extensions.get('periodicjs.ext.reactapp').reactapp();
-  let passport = periodic.locals.extensions.get('periodicjs.ext.passport');
+  let passport = periodic.locals.extensions.get('@digifi/periodicjs.ext.passport');
   // console.log({reactapp})
   // console.log('passport.paths', passport.paths);
   // console.log('periodic.extensions.has(periodicjs.ext.reactapp)', periodic.extensions.has('periodicjs.ext.reactapp'));
-  const passportSettings = periodic.settings.extensions[ 'periodicjs.ext.passport' ].reactapp;
+  const passportSettings = periodic.settings.extensions[ '@digifi/periodicjs.ext.passport' ].reactapp;
   const getContainerManifest = (entitytype) => {
     return {
       // [`${reactapp.manifest_prefix}auth/forgot`]: {

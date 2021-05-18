@@ -33,8 +33,8 @@ authRouter.get('/get_token_data', controllers.auth.getQueryParams);
 authRouter.get(utilities.routes.user_auth_reset + '/get_token_data/:token', controllers.user.getToken, controllers.auth.getControllerData);
 authRouter.get(utilities.routes.account_auth_reset + '/get_token_data/:token', controllers.user.getToken, controllers.auth.getControllerData);
 
-if (periodic.extensions.has('periodicjs.ext.reactapp') && periodic.extensions.has('periodicjs.ext.oauth2server')) {
-  const oauth2ServerControllers = periodic.controllers.extension.get('periodicjs.ext.oauth2server')
+if (periodic.extensions.has('periodicjs.ext.reactapp') && periodic.extensions.has('@digifi/periodicjs.ext.oauth2server')) {
+  const oauth2ServerControllers = periodic.controllers.extension.get('@digifi/periodicjs.ext.oauth2server');
   authRouter.post(utilities.routes.account_auth_complete, oauth2ServerControllers.auth.ensureApiAuthenticated, controllers.user.completeRegistration);
   authRouter.post(utilities.routes.user_auth_complete, oauth2ServerControllers.auth.ensureApiAuthenticated, controllers.user.completeRegistration);
   authRouter.post(utilities.routes.account_auth_activate, oauth2ServerControllers.auth.ensureApiAuthenticated, controllers.user.resendActivation);

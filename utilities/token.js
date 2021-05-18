@@ -3,7 +3,7 @@ const periodic = require('periodicjs');
 const moment = require('moment');
 const jwt = require('jsonwebtoken');
 const logger = periodic.logger;
-const passportSettings = periodic.settings.extensions['periodicjs.ext.passport'];
+const passportSettings = periodic.settings.extensions['@digifi/periodicjs.ext.passport'];
 let bcrypt;
 try {
   bcrypt = require('bcrypt');

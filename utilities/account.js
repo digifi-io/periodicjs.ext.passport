@@ -6,7 +6,7 @@ const utilAuth = require('./auth');
 const utilToken = require('./token');
 const jwt = require('jsonwebtoken');
 const complexity = require('complexity');
-const passportSettings = periodic.settings.extensions['periodicjs.ext.passport'];
+const passportSettings = periodic.settings.extensions['@digifi/periodicjs.ext.passport'];
 let bcrypt;
 try {
   bcrypt = require('bcrypt');
@@ -59,7 +59,7 @@ function validate(options) {
 }
 
 function getEmailPaths(options) {
-  const passportLocals = periodic.locals.extensions.get('periodicjs.ext.passport');  
+  const passportLocals = periodic.locals.extensions.get('@digifi/periodicjs.ext.passport');
   const { user, ra, routeSuffix, } = options; //routeSuffix='_auth_complete'
   const emailUser = Object.assign({}, (typeof user.toJSON === 'function') ? user.toJSON() : user);
   emailUser.password = '******';
@@ -141,7 +141,7 @@ function resetPasswordNotification(options) {
 function accountUpdateNotification(options) {
   return new Promise((resolve, reject) => {
     try {
-      // const passportLocals = periodic.locals.extensions.get('periodicjs.ext.passport');
+      // const passportLocals = periodic.locals.extensions.get('@digifi/periodicjs.ext.passport');
       // const { user, } = options;
       // const emailUser = Object.assign({}, (typeof user.toJSON==='function')?user.toJSON(): user);
 
