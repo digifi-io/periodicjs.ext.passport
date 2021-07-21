@@ -1,7 +1,7 @@
 {
   "name": "@digifi/periodicjs.ext.passport",
   "description": "Passport extension for periodicjs",
-  "version": "6.2.3",
+  "version": "6.2.4",
   "main": "index.js",
   "engines": {
     "node": "^6.x"
@@ -18,8 +18,8 @@
   "license": "MIT",
   "scripts": {
     "test": "mocha -R spec --recursive",
-    "postinstall": "cd ../../ && periodicjs aex @digifi/periodicjs.ext.passport",
-    "postuninstall": "cd ../../ && periodicjs rex @digifi/periodicjs.ext.passport"
+    "postinstall": "cd ../../../ && periodicjs aex @digifi/periodicjs.ext.passport",
+    "postuninstall": "cd ../../../ && periodicjs rex @digifi/periodicjs.ext.passport"
   },
   "dependencies": {
     "complexity": "0.0.6",
